@@ -1,0 +1,21 @@
+{
+  "name": "eslint-config-neptune-core",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Neptune Mutual",
+  "license": "MIT",
+  "volta": {
+    "node": "20.6.1",
+    "yarn": "1.22.21"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "dependencies": {
+    "eslint": "^8.57.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-n": "^16.6.2",
+    "eslint-plugin-promise": "^6.1.1"
+  }
+}

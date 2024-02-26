@@ -1,0 +1,1 @@
+# ESLint Next.js

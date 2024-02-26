@@ -1,0 +1,19 @@
+{
+  "name": "eslint-config-neptune-typescript",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Neptune Mutual",
+  "license": "MIT",
+  "volta": {
+    "node": "20.6.1",
+    "yarn": "1.22.21"
+  },
+  "peerDependencies": {
+    "eslint": "^8.57.0"
+  },
+  "dependencies": {
+    "@typescript-eslint/eslint-plugin": "^7.0.2",
+    "@typescript-eslint/parser": "^7.0.2",
+    "eslint": "^8.57.0"
+  }
+}

@@ -1,0 +1,26 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": "standard",
+  "overrides": [],
+  "plugins": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "prefer-arrow-callback": "error",
+    "import/group-exports": "error",
+    "import/exports-last": "error",
+    "import/no-default-export": "error",
+    "arrow-parens": ["error", "always"],
+    "implicit-arrow-linebreak": ["error", "below"],
+    "arrow-body-style": ["error", "always"],
+    "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
+    "curly": ["error", "all"]
+  }
+}

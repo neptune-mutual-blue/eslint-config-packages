@@ -1,0 +1,19 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true,
+    "node": true,
+    "jest": true
+  },
+  "extends": ["ankitkarna-core", "standard-jsx", "next/core-web-vitals"],
+  "overrides": [],
+  "plugins": [],
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "@next/next/no-img-element": 0,
+    "import/no-default-export": 0
+  }
+}
