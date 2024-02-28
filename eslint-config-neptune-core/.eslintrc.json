@@ -17,10 +17,53 @@
     "import/group-exports": "error",
     "import/exports-last": "error",
     "import/no-default-export": "error",
-    "arrow-parens": ["error", "always"],
-    "implicit-arrow-linebreak": ["error", "below"],
-    "arrow-body-style": ["error", "always"],
-    "brace-style": ["error", "1tbs", { "allowSingleLine": false }],
-    "curly": ["error", "all"]
+    "brace-style": [
+      "error",
+      "1tbs",
+      {
+        "allowSingleLine": false
+      }
+    ],
+    "curly": [
+      "error",
+      "all"
+    ],
+    "arrow-body-style": "off",
+    "implicit-arrow-linebreak": "off",
+    "arrow-parens": [
+      "error",
+      "as-needed",
+      {
+        "requireForBlockBody": true
+      }
+    ],
+    "no-restricted-syntax": [
+      "error",
+      "FunctionExpression[generator=false]:not(:has(ThisExpression)):not(ClassDeclaration)",
+      "FunctionDeclaration[generator=false]:not(:has(ThisExpression)):not(ClassDeclaration)"
+    ],
+    "padding-line-between-statements": [
+      "error",
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "block"
+      },
+      {
+        "blankLine": "always",
+        "prev": "block",
+        "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "block-like"
+      },
+      {
+        "blankLine": "always",
+        "prev": "block-like",
+        "next": "*"
+      }
+    ]
   }
 }
