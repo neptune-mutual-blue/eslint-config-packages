@@ -28,6 +28,7 @@
       "error",
       "all"
     ],
+    "no-else-return": "error",
     "arrow-body-style": "off",
     "implicit-arrow-linebreak": "off",
     "arrow-parens": [

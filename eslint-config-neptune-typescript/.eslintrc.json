@@ -5,9 +5,13 @@
     "node": true,
     "jest": true
   },
-  "extends": ["plugin:@typescript-eslint/recommended"],
+  "extends": [
+    "plugin:@typescript-eslint/recommended"
+  ],
   "overrides": [],
-  "plugins": ["@typescript-eslint"],
+  "plugins": [
+    "@typescript-eslint"
+  ],
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
     "ecmaVersion": "latest",
@@ -24,7 +28,9 @@
     "no-unused-vars": 0,
     "@typescript-eslint/no-unused-vars": [
       "error",
-      { "ignoreRestSiblings": true }
+      {
+        "ignoreRestSiblings": true
+      }
     ],
     "no-redeclare": "off",
     "@typescript-eslint/no-redeclare": [
@@ -34,6 +40,20 @@
       }
     ],
     "no-undef": "off",
-    "no-shadow": "off"
+    "no-shadow": "off",
+    "no-use-before-define": "off",
+    "@typescript-eslint/no-use-before-define": [
+      "error",
+      "nofunc"
+    ],
+    "@typescript-eslint/ban-types": [
+      "error",
+      {
+        "types": {
+          "Function": false
+        },
+        "extendDefaults": true
+      }
+    ]
   }
 }
