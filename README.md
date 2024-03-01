@@ -1,31 +1,31 @@
 ## Neptune Mutual ESLint Packages
-Currently, the packages are hosted with the prefix of `eslint-config-ankitkarna-`, which will later be changed to `eslint-config-neptune-`
+Currently, the packages are hosted with the prefix of `eslint-config-neptunemutual-`, which will later be changed to `eslint-config-neptune-`
 
 ## ESLint Config Core
 
 ```
-yarn add -D eslint eslint-config-ankitkarna-core
+yarn add -D eslint eslint-config-neptunemutual-core
 ```
 
 Now create a `.eslintrc.json` file in the root of the project with the following content.
 
 ```
 {
-  "extends": "ankitkarna-core"
+  "extends": "neptunemutual-core"
 }
 ```
 
 ## ESLint Config Next
 
 ```
-yarn add -D eslint eslint-config-ankitkarna-next
+yarn add -D eslint eslint-config-neptunemutual-next
 ```
 
 Now create a `.eslintrc.json` file in the root of the project with the following content.
 
 ```
 {
-  "extends": "ankitkarna-next"
+  "extends": "neptunemutual-next"
 }
 ```
 
@@ -36,28 +36,28 @@ Make sure you have `typescript` as the devDependency of the project.
 ### For Node/Typescipt:
 
 ```
-yarn add -D eslint eslint-config-ankitkarna-core eslint-config-ankitkarna-typescript
+yarn add -D eslint eslint-config-neptunemutual-core eslint-config-neptunemutual-typescript
 ```
 
 And `.eslintrc.json` will be:
 
 ```
 {
-  "extends": ["ankitkarna-core", "ankitkarna-typescript"]
+  "extends": ["neptunemutual-core", "neptunemutual-typescript"]
 }
 ```
 
 ### For Next/Typescipt:
 
 ```
-yarn add -D eslint eslint-config-ankitkarna-next eslint-config-ankitkarna-typescript
+yarn add -D eslint eslint-config-neptunemutual-next eslint-config-neptunemutual-typescript
 ```
 
 And `.eslintrc.json` will be:
 
 ```
 {
-  "extends": ["ankitkarna-next", "ankitkarna-typescript"]
+  "extends": ["neptunemutual-next", "neptunemutual-typescript"]
 }
 ```
 

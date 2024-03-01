@@ -5,7 +5,7 @@
     "node": true,
     "jest": true
   },
-  "extends": ["ankitkarna-core", "standard-jsx", "next/core-web-vitals"],
+  "extends": ["neptunemutual-core", "standard-jsx", "next/core-web-vitals"],
   "overrides": [],
   "plugins": [],
   "parserOptions": {
