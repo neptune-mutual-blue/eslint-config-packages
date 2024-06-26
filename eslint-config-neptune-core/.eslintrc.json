@@ -40,8 +40,26 @@
     ],
     "no-restricted-syntax": [
       "error",
-      "FunctionExpression[generator=false]:not(:has(ThisExpression)):not(ClassDeclaration)",
-      "FunctionDeclaration[generator=false]:not(:has(ThisExpression)):not(ClassDeclaration)"
+      {
+        "selector": "FunctionExpression[generator=false]:not(:has(ThisExpression)):not(ClassDeclaration)",
+        "message": "Use arrow functions instead of function expressions."
+      },
+      {
+        "selector": "FunctionDeclaration[generator=false]:not(:has(ThisExpression)):not(ClassDeclaration)",
+        "message": "Use arrow functions instead of function expressions."
+      },
+      {
+        "selector": ":matches(FunctionDeclaration, FunctionExpression, ArrowFunctionExpression) > TSTypeAnnotation > TSTypeLiteral",
+        "message": "Do not use inline types for return types, define a separate type alias or interface instead."
+      },
+      {
+        "selector": ":matches(FunctionDeclaration, FunctionExpression, ArrowFunctionExpression) > TSTypeAnnotation > TSTypeLiteral > TSTypeParameterInstantiation",
+        "message": "Do not use inline types for return types within generic types, define a separate type alias or interface instead."
+      },
+      {
+        "selector": ":matches(TSTypeParameterInstantiation) > :matches(TSTypeLiteral, TSIntersectionType, TSUnionType)",
+        "message": "Do not use inline types for return types within generic types, define a separate type alias or interface instead."
+      }
     ],
     "padding-line-between-statements": [
       "error",
@@ -64,7 +82,87 @@
         "blankLine": "always",
         "prev": "block-like",
         "next": "*"
+      },
+      {
+        "blankLine": "always",
+        "prev": "*",
+        "next": "return"
       }
-    ]
+    ],
+    "camelcase": [
+      "error",
+      {
+        "properties": "always"
+      }
+    ],
+    "object-curly-newline": "error",
+    "import/extensions": [
+      "error",
+      "always"
+    ],
+    "max-lines": [
+      "error",
+      {
+        "max": 185
+      }
+    ],
+    "complexity": [
+      "error",
+      15
+    ],
+    "no-multi-spaces": [
+      "error",
+      {
+        "ignoreEOLComments": false
+      }
+    ],
+    "operator-linebreak": [
+      "error",
+      "after",
+      {
+        "overrides": {
+          "=": "none"
+        }
+      }
+    ],
+    "no-caller": "error",
+    "no-constant-condition": [
+      "error",
+      {
+        "checkLoops": false
+      }
+    ],
+    "no-eval": "error",
+    "no-extra-bind": "error",
+    "no-new-func": "error",
+    "no-new-wrappers": "error",
+    "no-restricted-globals": [
+      "error",
+      {
+        "name": "setInterval"
+      },
+      {
+        "name": "clearInterval"
+      },
+      {
+        "name": "setImmediate"
+      },
+      {
+        "name": "clearImmediate"
+      }
+    ],
+    "no-template-curly-in-string": "error",
+    "no-throw-literal": "error",
+    "no-undef-init": "error",
+    "no-var": "error",
+    "object-shorthand": "error",
+    "prefer-const": "error",
+    "prefer-object-spread": "error",
+    "unicode-bom": [
+      "error",
+      "never"
+    ],
+    "no-unused-expressions": "error",
+    "eqeqeq": "error"
   }
 }

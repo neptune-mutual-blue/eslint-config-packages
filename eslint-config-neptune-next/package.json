@@ -5,7 +5,7 @@
   "author": "Neptune Mutual",
   "license": "MIT",
   "volta": {
-    "node": "20.6.1",
+    "node": "20.9.0",
     "yarn": "1.22.21"
   },
   "peerDependencies": {
@@ -13,7 +13,7 @@
   },
   "dependencies": {
     "eslint": "^8.57.0",
-    "eslint-config-neptunemutual-core": "^1.0.1",
+    "eslint-config-neptune-core": "^1.0.1",
     "eslint-config-next": "^14.1.0",
     "eslint-config-standard-jsx": "^11.0.0"
   }

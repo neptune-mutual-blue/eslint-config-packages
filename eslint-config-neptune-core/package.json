@@ -1,11 +1,11 @@
 {
   "name": "eslint-config-neptune-core",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "main": "index.js",
   "author": "Neptune Mutual",
   "license": "MIT",
   "volta": {
-    "node": "20.6.1",
+    "node": "20.9.0",
     "yarn": "1.22.21"
   },
   "peerDependencies": {
